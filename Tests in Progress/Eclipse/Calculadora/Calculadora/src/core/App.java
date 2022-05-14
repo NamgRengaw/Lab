@@ -1,7 +1,5 @@
 package core;
 
-import java.util.Scanner;
-
 import command.Operators;
 
 public class App {

@@ -9,8 +9,10 @@ public class Commom {
 	int choice;
 	
 	Scanner in = new Scanner(System.in);
+	SwitchWindows sw = new SwitchWindows();
 	
 	public Commom(){
+		
 		System.out.println("============================ Calculadora =============================== \n"
 				+			"!!!!!!!! Insira Apenas o número respectivo a operação desejada !!!!!!!"
 				+ "Selecione o tipo de operação?\n"
@@ -20,7 +22,17 @@ public class Commom {
 				+ "4 - Divisão\n");
 				
 		choice = in.nextInt();
-		System.out.format("Sua escolha é: %d", choice);
+		
+		if(choice == 1) {
+			sw.somar();
+		}else if(choice ==2) {
+			sw.subtrair();
+		}else if(choice == 3) {
+			sw.multiplicação();
+		}else if(choice == 4) {
+			sw.dividir();
+		}
+		
 		System.out.println("");
 		
 		System.out.println("Digite o primeiro numero: ");
