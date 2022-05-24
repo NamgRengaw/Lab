@@ -13,7 +13,7 @@ public class Produto {
 	
 	private String nome;
 	
-	private Short quantidade;
+	private Byte quantidade;
 	
 	private BigDecimal preco;
 	
